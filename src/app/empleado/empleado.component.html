@@ -1,0 +1,11 @@
+<p>Aqui iría el primer empleado</p>
+<p>Nombre del empleado: {{nombre}}</p>
+<p>apellido del empleado: {{apellido}}</p> <p>edad del empleado: {{ getEdad() < 18 ? 'Menor de edad' : 'Mayor de edad' }} y tiene: {{ getEdad() }} años</p>
+<p>Empresa del empleado: {{empresa.value}}</p>
+<!--texto dinamico que cambia en funcion del numero que metamos en la edad-->
+
+Introduce el nombre: <input type="text" #empresa><!--con # identificamos a empresa la almohadilla identifica una varaible de
+plantilla-->
+<br/>
+<br/>
+<input type="button" value="Pulsar" (click)="llamaEmpresa(empresa.value)">
